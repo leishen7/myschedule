@@ -1,0 +1,93 @@
+<resources>
+    <string name="app_name">我的日程安排</string>
+    <string name="home">首页</string>
+    <string name="weekview">日历</string>
+
+
+    <string name="action_today">今天</string>
+    <string name="action_day_view">一天</string>
+    <string name="action_three_day_view">三天</string>
+    <string name="action_week_view">一周</string>
+    <string name="title_activity_basic">纽康CRM</string>
+    <string name="title_activity_asynchronous">Asynchronous Events</string>
+    <string name="async_error">Could not download events from the internet</string>
+
+    <string name="time_picker_example">Time Picker Example</string>
+    <string name="time_pick">Pick the time and press save button</string>
+    <string name="time_save">Save</string>
+    <string name="time_selected"></string>
+    <string name="time_current">The Time is:</string>
+
+    <string name="service">服务</string>
+    <string name="setting">设置</string>
+
+    <string name="EVENT_ID">EVENT_ID</string>
+    <string name="EVENT_NAME">EVENT_NAME</string>
+    <string name="EVENT_LOCATION">EVENT_LOCATION</string>
+    <string name="EVENT_DESCRIPTION">EVENT_DESCRIPTION</string>
+    <string name="EVENT_START_TIME">EVENT_START_TIME</string>
+    <string name="EVENT_END_TIME">EVENT_END_TIME</string>
+    <string name="EVENT_IS_ALL_DAY">EVENT_IS_ALL_DAY</string>
+
+
+    <string name="userID">User ID</string>
+    <string name="password">Password</string>
+    <string name="firstName">First Name</string>
+    <string name="lastName">Last Name</string>
+    <string name="email">Email</string>
+    <string name="phone">Phone</string>
+    <string name="nickName">Nick Name</string>
+    <string name="PREF_USER_TOKEN">UserToken</string>
+    <string name="JSON_TOKEN">token</string>
+
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">电邮</string>
+    <string name="prompt_password">密码</string>
+    <string name="action_sign_in">登  录</string>
+    <string name="action_sign_in_short">登录</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string-array name="questions_array">
+
+        <item>App使用</item>
+
+        <item>交易开户</item>
+
+        <item>推荐交易</item>
+
+        <item>用户评论</item>
+
+        <item>改进建议</item>
+
+        <item>寻求合作</item>
+
+        <item>其他问题</item>
+
+    </string-array>
+
+    <string-array name="services_array">
+
+    <item>App使用</item>
+
+    <item>交易开户</item>
+
+    <item>推荐交易</item>
+
+    <item>用户评论</item>
+
+    <item>改进建议</item>
+
+    <item>寻求合作</item>
+
+    <item>其他问题</item>
+
+</string-array>
+
+
+</resources>

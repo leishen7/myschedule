@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".AddEventActivity">
+    <item
+        android:id="@+id/home"
+        android:orderInCategory="1"
+        android:title="@string/home"
+        app:showAsAction="always" />
+    <item android:id="@+id/weekview"
+        android:title="@string/weekview"
+        android:orderInCategory="100"
+        app:showAsAction="always"/>
+    <item android:id="@+id/setting"
+        android:title="@string/setting"
+        android:orderInCategory="100"
+        app:showAsAction="always"/>
+</menu>
