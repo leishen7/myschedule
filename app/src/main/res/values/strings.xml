@@ -29,6 +29,9 @@
     <string name="EVENT_END_TIME">EVENT_END_TIME</string>
     <string name="EVENT_IS_ALL_DAY">EVENT_IS_ALL_DAY</string>
 
+    <string name="SERVICE_ID">SERVICE_ID</string>
+    <string name="SERVICE_PROVIDER">SERVICE_PROVIDER</string>
+
 
     <string name="userID">User ID</string>
     <string name="password">Password</string>

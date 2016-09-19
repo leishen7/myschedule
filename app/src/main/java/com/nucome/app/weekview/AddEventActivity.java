@@ -30,6 +30,7 @@ import com.nucome.app.cal.DateUtil;
 import com.nucome.app.cal.Utility;
 import com.nucome.app.crm.MainActivity;
 import com.nucome.app.crm.R;
+import com.nucome.app.crm.SearchServiceActivity;
 
 import java.util.ArrayList;
 import java.util.Calendar;
@@ -43,11 +44,13 @@ public class AddEventActivity extends AppCompatActivity {
     private EditText startTimeEditText;
     private EditText endTimeEditText;
     private EditText descriptionEditText;
+    private EditText providerEditText;
 
     private Button searchServiceButton;
 
     private Button createButton;
 
+    private String serviceId;
     private String startTime;
     private String endTime;
 
@@ -66,16 +69,19 @@ public class AddEventActivity extends AppCompatActivity {
         startTimeEditText=(EditText) findViewById(R.id.startTimeEditText);
         endTimeEditText=(EditText) findViewById(R.id.endTimeEditText);
         descriptionEditText=(EditText) findViewById(R.id.descriptionEditText);
+        providerEditText=(EditText) findViewById(R.id.providerEditText);
 
         final Intent intent = getIntent();
         if (intent != null ) {
             nameEditText.setText(intent.getStringExtra(getString(R.string.EVENT_NAME)));
             locationEditText.setText(intent.getStringExtra(getString(R.string.EVENT_LOCATION)));
+            serviceId= intent.getStringExtra(getString(R.string.SERVICE_ID));
             startTime=intent.getStringExtra(getString(R.string.EVENT_START_TIME));
             startTimeEditText.setText(startTime);
             endTime=intent.getStringExtra(getString(R.string.EVENT_END_TIME));
             endTimeEditText.setText(endTime);
             descriptionEditText.setText(intent.getStringExtra(getString(R.string.EVENT_DESCRIPTION)));
+            providerEditText.setText(intent.getStringExtra(getString(R.string.SERVICE_PROVIDER)));
         }
 
         createButton = (Button) findViewById(R.id.submitAdd);
@@ -290,8 +296,10 @@ public class AddEventActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-              //  Intent intent = new Intent(this, BasicActivity.class);
-            //    startActivity(intent);
+                Intent intent = new Intent(getApplicationContext(), SearchServiceActivity.class);
+                intent.putExtra(getString(R.string.EVENT_START_TIME),startTime);
+                intent.putExtra(getString(R.string.EVENT_END_TIME),endTime);
+                startActivity(intent);
 
             }
         });
